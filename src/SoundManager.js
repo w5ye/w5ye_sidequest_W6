@@ -28,7 +28,7 @@ export class SoundManager {
     const s = this.sfx[name];
     if (!s) return;
 
-    if (loop) s.loop();
-    else s.play();
+    if (loop) s.setLoop(true);
+    s.play();
   }
 }
