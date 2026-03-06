@@ -100,7 +100,7 @@ export function redrawHUD(level) {
   g.imageMode(CORNER);
 
   // Score
-  const label = level.tuning?.hud?.rescueLabel ?? "RESCUED";
+  const label = level.tuning?.hud?.rescueLabel ?? "collected";
   drawOutlined(`${label} ${level.score}/${level.WIN_SCORE}`, 6, 6, "#ffdc00");
 
   // Hearts

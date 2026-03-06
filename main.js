@@ -319,7 +319,7 @@ function keyPressed(evt) {
   unlockAudioOnce();
 
   if (!musicStarted) {
-    soundManager.play("music");
+    soundManager.play("music", true);
     musicStarted = true;
   }
 
